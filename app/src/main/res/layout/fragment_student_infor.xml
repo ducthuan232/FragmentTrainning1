@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_custom1">
+
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/txtNameI"
+    android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtBornI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Year off birth:"
+        android:textColor="#F13E06"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/txtNameI"
+        app:layout_constraintTop_toBottomOf="@+id/txtNameI" />
+
+    <TextView
+        android:id="@+id/txtAddressI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Address:"
+        android:textSize="18sp"
+        android:textColor="#F13E06"
+        app:layout_constraintStart_toStartOf="@+id/txtBornI"
+        app:layout_constraintTop_toBottomOf="@+id/txtBornI" />
+
+    <TextView
+        android:id="@+id/txtEmailI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Email@: "
+        android:textSize="18sp"
+        android:textColor="#F13E06"
+        app:layout_constraintStart_toStartOf="@+id/txtAddressI"
+        app:layout_constraintTop_toBottomOf="@+id/txtAddressI" />
+</androidx.constraintlayout.widget.ConstraintLayout>
